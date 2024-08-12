@@ -1,0 +1,30 @@
+.home-img img {
+    border-radius: 10000%; /* This makes the image circular */
+    width: 500px; /* Ensures the image is responsive */
+    height: 500px;
+    padding: 100px; /* Maintains the aspect ratio */
+}
+.home-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-img, .home-text {
+    flex: 1;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-text {
+    padding: 20px;
+}
+
+/* Ensure alignment and spacing for smaller screens */
+@media (max-width: 767.98px) {
+    .home-items {
+        flex-direction: column;
+    }
+}
